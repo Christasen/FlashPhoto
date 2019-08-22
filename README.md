@@ -82,53 +82,53 @@ This is the threshold filter.
 By using this filter, each of the color channels will be rounded up to the maximum value of 1.0 or down to the minimum value of 0.0 based on whether the pixel’s value is greater or less than the GLUI input value, respectively.
 
 For a example, we applied threshold with 0.7 value here
-![Threshold](pics/0.7threshold.png)
+![Threshold](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/0.7threshold.png)
 
 ### Saturation Filter
 This is the Saturation filter. You can use this filter to increase or decrease the colorfulness of the image.
 
 For a example, we applied Saturation with 2 value here
-![Saturation](pics/2saturate.png)
+![Saturation](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/2saturate.png)
 
 ### Channels Filter
 This is the channels filter and you can change the red, blue, green color to change the color settings of you picture!
 This filter will independently scale up or down the intensity of each color channel (red, green, and blue).
 
 For a example, we applied channels in red with 1.5 value here
-![Channels](pics/1.5red.png)
+![Channels](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/1.5red.png)
 
 ### Quantize Filter
 This is the quantize filter,by using this filter , you can reduce the number of colors in the image by binning.  If using 4 bins, there will only be 4 possible intensity values for each color channel, spaced evenly: 0%, 33%, 66%, and 100%. The filter will adjust each color channel value R, G, and B to put it into the nearest bin.
 
 For a example, we applied quantize with 2 value here
-![Quantize](pics/2quantize.png)
+![Quantize](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/2quantize.png)
 
 ### Blur Filter
 This is the Blur filter and you can use this filter to blur your pics in a certain degree.
 The blur filter use a Gaussian Blur image convolution kernel to blur the image in proportion to the amount specified in the GUI.
 
 For a example, we applied blur with 3 value here
-![Blur](pics/3blur.png)
+![Blur](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/3blur.png)
 
 ### Motion Blur Filter
 This is the motionblur filter. Similar to blur filter, it will blur the pics by a certain degree.
 This filter will blur the image by convolving it with an appropriate motion-blurring kernel.  Support four possible blurring directions (North-to-South, East-to-West, Northeast-to-Southwest, and Northwest-to-Southeast) and blur according to the amount specified in the GUI.  
 
 For a example, we applied 7 motion blur in east west direction here
-![Motion Blur](pics/7mtblrew.png)
+![Motion Blur](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/7mtblrew.png)
 
 ### Sharpen Filter
 This is the sharpen filter and you can sharpen the image (accentuate the edges of shapes) in proportion to the amount specified in the GUI by convolving the image with an appropriate sharpening kernel.
 
 For a example, we applied Sharpen with 3 value here
-![Sharpen](pics/3sharpen.png)
+![Sharpen](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/3sharpen.png)
 
 ### Edge Detect Filter
 This is the edge detect filter and you can use this filter to make the "edge" pics.
 This filter will transform the image into one that only shows the edges of shapes by convolving it with a 3x3 edge detection kernel. Pixels on the border of differently colored regions will be bright, while pixels in areas of low change will be dark.
 
 For a example, we applied edge detection here
-![Edge Detect](pics/edge.png)
+![Edge Detect](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/edge.png)
 
 
 # MIA Abstract
@@ -220,7 +220,7 @@ Welcome to the FlashPhoto & Mia Project developer main page!
 
 For more information about the software, select the following pages
 ----------------
-## [Programming Reference](src/ref.md)
+## [Programming Reference](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/src/ref.md)
 ```bash
 Programming Reference
 =============
@@ -270,20 +270,20 @@ In order to present our structure clearly, we used the UML diagram here
 
 The Overall Structure
 ----------------
-![](pics/Overall.png)
+![](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/Overall.png)
 
 Image Editor Structure
 ----------------
-![](pics/UML.png)
+![](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/UML.png)
 
 
 The Filter Structure
 ----------------
-![](pics/filteruml.png)
+![](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/filteruml.png)
 
 The Tool Structure
 ----------------
-![](pics/Tool.png)
+![](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/Tool.png)
 ```
 
 ## [Coding Style](src/coding.md)
