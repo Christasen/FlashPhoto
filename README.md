@@ -327,9 +327,8 @@ This page is aimed to give you some ideas of adding a new tool or a new filters 
 Finally, you will see them work on your applications :)
 
 
-#### [Testing](src/test.md)
-```bash
-## Testing
+## [Testing](src/test.md)
+
 For testing, first, we used the CSE-check-style tests which have developed by the Computer Science Department, University of Minnesota, Twin Cities. So, our codes satisfied the google coding style after doing the first tests.
 Then, to test all the filters and the tools we implemented, I wrote few integration tests
  to ensure the correctness of all those features. Apart from the integration test,
@@ -358,7 +357,6 @@ Then, to test all the filters and the tools we implemented, I wrote few integrat
         ◦ Testing to make sure you calculate the correct set of image processing commands to run for
         valid command lines that list 0, 1, or multiple image processing commands.
 
-
 ### Regression tests:
 
 • For regression tests, the goal is to verify that features that worked once stay working, even as you continue to add to the code.
@@ -378,4 +376,3 @@ Finally, after this initialization, you can go ahead and write your tests.  Each
  compare the two pixel buffers (note that PixelBuffer has an overloaded == operator) to see if they are equal.
 
 • You should test all of your filters and all of your tools using this strategy.  For the tools, note that you can “fake” user input from the mouse by calling StartStroke(), AddToStroke(), and EndStroke() directly from your testing code.
-```
