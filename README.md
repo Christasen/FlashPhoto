@@ -258,7 +258,7 @@ The following link is about all the files we used in the projects
 ```
 
 
-## [Highlevel Design](src/uml.md)
+## [Highlevel Design](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/src/uml.md)
 ```bash
 In this project, we used many design patterns to construct the two application.
 1. MVC has been used in constructing the overall structure of the two application and the imagetools.
@@ -286,7 +286,7 @@ The Tool Structure
 ![](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/Tool.png)
 ```
 
-## [Coding Style](src/coding.md)
+## [Coding Style](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/src/coding.md)
 We followed the following google style
         ◦ Class interfaces follow McConnell’s guidelines of implementing just a
         single abstract data type within each class and using consistent levels of abstraction.
@@ -309,7 +309,7 @@ For more information about google style, visit [Google Style Guide](https://goog
 
 
 
-## [Common Tasks](src/task.md)
+## [Common Tasks](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/src/task.md)
 This page is aimed to give you some ideas of adding a new tool or a new filters to the application.
 
 #### Tools&Filters Design and Development
@@ -325,7 +325,7 @@ This page is aimed to give you some ideas of adding a new tool or a new filters 
 Finally, you will see them work on your applications :)
 
 
-## [Testing](src/test.md)
+## [Testing](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/src/test.md)
 
 For testing, first, we used the CSE-check-style tests which have developed by the Computer Science Department, University of Minnesota, Twin Cities. So, our codes satisfied the google coding style after doing the first tests.
 Then, to test all the filters and the tools we implemented, I wrote few integration tests
