@@ -259,7 +259,7 @@ The following link is about all the files we used in the projects
 
 
 ## [Highlevel Design](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/src/uml.md)
-```bash
+
 In this project, we used many design patterns to construct the two application.
 1. MVC has been used in constructing the overall structure of the two application and the imagetools.
 2. Template method, factory method has been used in constructing the imagetools library.
@@ -270,21 +270,21 @@ In order to present our structure clearly, we used the UML diagram here
 
 The Overall Structure
 ----------------
-![](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/Overall.png)
+![overall](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/Overall.png)
 
 Image Editor Structure
 ----------------
-![](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/UML.png)
+![UML](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/UML.png)
 
 
 The Filter Structure
 ----------------
-![](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/filteruml.png)
+![Filter](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/filteruml.png)
 
 The Tool Structure
 ----------------
-![](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/Tool.png)
-```
+![Tool](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/Tool.png)
+
 
 ## [Coding Style](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/src/coding.md)
 We followed the following google style
