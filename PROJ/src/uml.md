@@ -10,19 +10,15 @@ In this project, we used many design patterns to construct the two application.
 
 In order to present our structure clearly, we used the UML diagram here
 
-The Overall Structure
-----------------
-![](pics/Overall.png)
+### The Overall Structure
+![overall](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/Overall.png)
 
-Image Editor Structure
-----------------
-![](pics/UML.png)
+### Image Editor Structure
+![UML](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/UML.png)
 
 
-The Filter Structure
-----------------
-![](pics/filteruml.png)
+### The Filter Structure
+![Filter](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/filteruml.png)
 
-The Tool Structure
-----------------
-![](pics/Tool.png)
+### The Tool Structure
+![Tool](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/Tool.png)
