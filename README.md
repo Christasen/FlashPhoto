@@ -49,7 +49,7 @@ FlashPhoto is a digital painting and image-editing tool, similar to some you hav
 ## Tools
 Here is introduction of the tools you can use in the FlashPhoto
 In the following pictures, different tools examples has been showed
-![Flashphoto Interface](pics/pen.png)
+![Flashphoto Interface](https://github.com/Christasen/FlashPhoto/tree/master/PROJ/pics/pen.png)
 
 ### Pen
 This tool is designed to look like a pen.  It makes an opaque, circular mark with constant intensity.  This means that when the pen is applied to the canvas the digital ink from the pen completely covers any color that had previously been applied to the canvas at that position.  The color of the pen can be set interactively using the GUI.
