@@ -38,109 +38,21 @@ make clean
 ```
 
 ----------------
-#### For User
 
-### Abstract
-```bash
+User page
+=============
+Welcome to the FlashPhoto project developer main page!
+
 This is a software design and development project which has been completed by Guangyu Yan and the CSCI3081 instructors in the University of Minnesota, Twin Cities. We developed software called FlashPhoto which is a digital painting and image-editing tool. It mainly contains eight filters and eight tools to process photos or design and draw new images. With some similar features of Flashphoto, the Medical Images Analysis(Mia) tool aims to support the medical analysis. The mia application is powerful but much smaller than the FlashPhoto since it is a very special-purpose tool. Also, I developed two different modes for Mia to run, the graphics mode and command line mode.
-```
 
-#### Mia
-```bash
-Mia Information Page
-=============
-Welcome to the Mia information page!
-```
-# Abstract
-Medical Image Analysis(Mia) is an application that could be used for interpreting medical images. We offered few tools and filters in the application for you to edit your images. We offered two modes for you to use our app.
-
-![Mia Interface]
-## Loading and Editing Images
-
-## Graphical Mode:
-You can simply click on the load file button on the software to load a file. There will be several tool and filter buttons for you to choose to edit your image.
-
-    • A stamp tool that is hardcoded to stamp a bullseye pattern, one circle inside another, that clinicians can use to mark important areas on the image.
-
-    • A pen tool, also useful for annotating images (e.g., circling a break in a bone).
-
-    • A subset of the filters you have implemented previously that would be useful for medical imaging (blur, sharpen, edge detect, threshold, quantize).
-
-    • File Open/Save controls
-    \
-
-## Command Line Mode
-There's a command mode in this application. You can do the following commands in your terminal to edit your files.
-
-## Commands details:
-    • Display a help message for a –h argument or any set of invalid arguments.  You can copy our example (below) or determine your own good format for a useful help message.
-
-        ◦ mia –h
-
-        ◦ mia <any invalid arguments>
-
-    • Load an image specified by the first filename and save it out to the second filename.  With no other arguments specified, this is equivalent to copying the image file.
-
-        ◦ mia in.png out.png
-
-    • Run an image processing command before saving out the new file.  For example, to sharpen an image using a kernel of radius 5 and save the output to a new image:
-
-        ◦ mia in.png –sharpen 5 out.png
-
-    • Run multiple image processing commands in order.  For example, sharpen an image by amount 5, then run an edge detection filter, then save the output to a new image. (This example just shows two filter operations, but you need to support an arbitrary number of filter operations that are specified in order they should be applied.):
-
-        ◦ mia in.png –sharpen 5 –edgedetect out.png
-
-  Here is the complete list of command-line arguments to support as reported by a sample help message, which you are welcome to copy and use as your own:
-
-        • usage: mia infile.png [image processing commands ...] outfile.png
-
-        • infile.png:          input image file in png format
-
-        • outfile.png:         filename to use for saving the result
-
-
-
-  image processing comamnds:
-
-        • -blur r:             apply a gaussian blur of radius r
-
-        • -edgedetect:         apply an edge detection filter
-
-        • -sharpen r:          apply a sharpening filter of radius r
-
-        • -red s:              scale the red channel by factor s
-
-        • -green s:            scale the green channel by factor s
-
-        • -blue s:             scale the blue channel by factor s
-
-        • -quantize n:         quantize each color channel into n bins
-
-        • -saturate s:         saturate colors by scale factor s
-
-        • -threshold c:        threshold using cutoff value c
-
-        • -motionblur-n-s r:   north-south motion blur with kernel radius r
-
-        • -motionblur-e-w r:   east-west motion blur with kernel radius r
-
-        • -motionblur-ne-sw r: ne-sw motion blur with kernel radius r
-
-        • -motionblur-nw-se r: nw-se motion blur with kernel radius r
-
-#### FlashPhoto
-lashPhoto Information Page
-=============
-Welcome to the FlashPhoto information page!
-
-# Abstract
+# FlashPhoto Abstract
 FlashPhoto is a digital painting and image-editing tool, similar to some you have likely used before (e.g., Adobe Photoshop, Gimp, MS Paint, various smartphone apps). Equipped with the few tools and filters, you can create your own art by using FlashPhoto!
 
 ## Tools
 Here is introduction of the tools you can use in the FlashPhoto
 In the following pictures, different tools examples has been showed
 ![Flashphoto Interface](pics/pen.png)
+
 ### Pen
 This tool is designed to look like a pen.  It makes an opaque, circular mark with constant intensity.  This means that when the pen is applied to the canvas the digital ink from the pen completely covers any color that had previously been applied to the canvas at that position.  The color of the pen can be set interactively using the GUI.
 
@@ -221,8 +133,85 @@ For a example, we applied edge detection here
 ![Edge Detect](pics/edge.png)
 
 
+# MIA Abstract
+Medical Image Analysis(Mia) is an application that could be used for interpreting medical images. We offered few tools and filters in the application for you to edit your images. We offered two modes for you to use our app.
 
-#### For Developer
+
+## Graphical Mode:
+You can simply click on the load file button on the software to load a file. There will be several tool and filter buttons for you to choose to edit your image.
+
+    • A stamp tool that is hardcoded to stamp a bullseye pattern, one circle inside another, that clinicians can use to mark important areas on the image.
+
+    • A pen tool, also useful for annotating images (e.g., circling a break in a bone).
+
+    • A subset of the filters you have implemented previously that would be useful for medical imaging (blur, sharpen, edge detect, threshold, quantize).
+
+    • File Open/Save controls
+
+
+## Command Line Mode
+There's a command mode in this application. You can do the following commands in your terminal to edit your files.
+
+## Commands details:
+    • Display a help message for a –h argument or any set of invalid arguments.  You can copy our example (below) or determine your own good format for a useful help message.
+
+        ◦ mia –h
+
+        ◦ mia <any invalid arguments>
+
+    • Load an image specified by the first filename and save it out to the second filename.  With no other arguments specified, this is equivalent to copying the image file.
+
+        ◦ mia in.png out.png
+
+    • Run an image processing command before saving out the new file.  For example, to sharpen an image using a kernel of radius 5 and save the output to a new image:
+
+        ◦ mia in.png –sharpen 5 out.png
+
+    • Run multiple image processing commands in order.  For example, sharpen an image by amount 5, then run an edge detection filter, then save the output to a new image. (This example just shows two filter operations, but you need to support an arbitrary number of filter operations that are specified in order they should be applied.):
+
+        ◦ mia in.png –sharpen 5 –edgedetect out.png
+
+  Here is the complete list of command-line arguments to support as reported by a sample help message, which you are welcome to copy and use as your own:
+
+        • usage: mia infile.png [image processing commands ...] outfile.png
+
+        • infile.png:          input image file in png format
+
+        • outfile.png:         filename to use for saving the result
+
+
+
+  image processing comamnds:
+
+        • -blur r:             apply a gaussian blur of radius r
+
+        • -edgedetect:         apply an edge detection filter
+
+        • -sharpen r:          apply a sharpening filter of radius r
+
+        • -red s:              scale the red channel by factor s
+
+        • -green s:            scale the green channel by factor s
+
+        • -blue s:             scale the blue channel by factor s
+
+        • -quantize n:         quantize each color channel into n bins
+
+        • -saturate s:         saturate colors by scale factor s
+
+        • -threshold c:        threshold using cutoff value c
+
+        • -motionblur-n-s r:   north-south motion blur with kernel radius r
+
+        • -motionblur-e-w r:   east-west motion blur with kernel radius r
+
+        • -motionblur-ne-sw r: ne-sw motion blur with kernel radius r
+
+        • -motionblur-nw-se r: nw-se motion blur with kernel radius r
+
+
+
+
 Developer page
 =============
 Welcome to the CSCI3081W project developer main page!
@@ -233,7 +222,7 @@ Abstract: This is a software design and development project which has been compl
 
 For more information about the software, select the following pages
 ----------------
-#### [Programming Reference](src/ref.md)
+## [Programming Reference](src/ref.md)
 ```bash
 Programming Reference
 =============
@@ -271,7 +260,7 @@ The following link is about all the files we used in the projects
 ```
 
 
-#### [Highlevel Design](src/uml.md)
+## [Highlevel Design](src/uml.md)
 ```bash
 In this project, we used many design patterns to construct the two application.
 1. MVC has been used in constructing the overall structure of the two application and the imagetools.
@@ -299,7 +288,7 @@ The Tool Structure
 ![](pics/Tool.png)
 ```
 
-#### [Coding Style](src/coding.md)
+## [Coding Style](src/coding.md)
 We followed the following google style
         ◦ Class interfaces follow McConnell’s guidelines of implementing just a
         single abstract data type within each class and using consistent levels of abstraction.
@@ -322,11 +311,10 @@ For more information about google style, visit [Google Style Guide](https://goog
 
 
 
-#### [Common Tasks](src/task.md)
-# Abstract:
+## [Common Tasks](src/task.md)
 This page is aimed to give you some ideas of adding a new tool or a new filters to the application.
 
-## Tools&Filters Design and Development
+#### Tools&Filters Design and Development
 1. Go to the PROJ/src/imagetools, adding the filter or tools with both .h and .cc files
 2. Your filter or tools should inherit the parent filter or tool class
 3. Follow the same structure of develop existing filters and tools, design your own tools
